@@ -1,0 +1,201 @@
+@font-face {
+  font-family: "Fontin-SmallCaps";
+  src: url("https://web.poecdn.com/font/fontin-regular-webfont.woff") format("woff");
+  src: url("https://web.poecdn.com/font/fontin-smallcaps-webfont.woff") format("woff");
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  color: #AB9066;
+  font-family: "Fontin-SmallCaps";
+  font-weight: normal;
+  background-color: #000
+}
+
+/*
+*/
+
+.ItemContainer {
+  position: relative;
+  margin-bottom: 20px;
+  font-size: 70%;
+  font-weight: normal;
+}
+
+.ItemBox {
+  text-align: center;
+  color: #EFEFEF;
+  font-size: 1.3em;
+  background-color: rgba(0, 0, 0, 0.8);
+  opacity: 50%;
+  border-style: solid;
+  border-width: 1px;
+}
+
+.ItemContent {
+  padding-left: 11px;
+  padding-right: 11px;
+  padding-bottom: 7px;
+}
+
+/*
+*/
+
+.DoubleBar {
+  height: 52px;
+}
+
+.SingleBar {
+  height: 32px;
+}
+
+.SingleEnd {
+  width: 29px;
+}
+
+.DoubleEnd {
+  width: 43px;
+}
+
+.TitleBar {
+  background: top left repeat-x;
+  position: relative;
+}
+
+.TitleBarL {
+  left: -11px;
+  position: absolute;
+}
+
+.TitleBarR {
+  right: -11px;
+  position: absolute;
+}
+
+/*
+*/
+
+.ItemName,
+.ItemType {
+  top: 6px;
+  font-size: 18px;
+  position: relative;
+}
+
+.ItemName {
+  line-height: 20px;
+}
+
+.ItemStats {
+  margin-top: 10px;
+}
+
+/*
+*/
+
+.ItemSeparator {
+  background: center no-repeat;
+  position: relative;
+  height: 7.91075px;
+  margin: 1px 0px;
+}
+
+/*
+*/
+
+.ExplicitMod,
+.ImplicitMod {
+  color: #8888FF;
+  white-space: nowrap;
+}
+
+.FlavourUnique {
+  color: #af6025;
+}
+
+.FlavourText {
+  white-space: normal;
+  font-style: italic;
+  text-align: center;
+  display: flex;
+  overflow-wrap: break-word;
+  word-break: break-word;
+}
+
+.Text {
+  display: inline-block;
+  padding: 0 10px;
+  color: #777;
+}
+
+.Default {
+  color: #fff
+}
+
+.Augmented {
+  color: #88f
+}
+
+.Unmet {
+  color: #d20000
+}
+
+.PhysicalDamage {
+  color: #fff
+}
+
+.FireDamage {
+  color: #960000
+}
+
+.ColdDamage {
+  color: #366492
+}
+
+.LightningDamage {
+  color: gold
+}
+
+.ChaosDamage {
+  color: #d02090
+}
+
+.FlavourText span p,
+.ExplicitMod span p {
+  line-height: 18px;
+  padding: 0;
+  margin: 0;
+}
+
+.itemImg {
+  margin-top: 30px;
+}
+
+.tippy-tooltip {
+  background: none !important;
+  padding: 0 !important;
+}
+
+#hideTooltip {
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}
+
+.Identified {
+  background-color: rgba(25, 26, 150, 0.25);
+}
+
+.Unidentified {
+  background-color: rgba(210, 0, 0, 0.18);
+}
+
+#stashTab1 {
+  display: block;
+  margin: auto;
+  background-image: url("https://web.poecdn.com/image/gen/inventory/StashPanelGrid.png?1522895930000");
+  width: 569px;
+  height: 569px;
+  position: relative;
+}
