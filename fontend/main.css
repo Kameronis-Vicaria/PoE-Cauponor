@@ -43,35 +43,23 @@ body {
 */
 
 .DoubleBar {
-  height: 52px;
-}
-
+  height: 52px; }
 .SingleBar {
-  height: 32px;
-}
-
+  height: 32px; }
 .SingleEnd {
-  width: 29px;
-}
-
+  width: 29px; }
 .DoubleEnd {
-  width: 43px;
-}
+  width: 43px; }
 
 .TitleBar {
   background: top left repeat-x;
-  position: relative;
-}
-
+  position: relative; }
 .TitleBarL {
   left: -11px;
-  position: absolute;
-}
-
+  position: absolute; }
 .TitleBarR {
   right: -11px;
-  position: absolute;
-}
+  position: absolute; }
 
 /*
 */
@@ -85,11 +73,9 @@ body {
 
 .ItemName {
   line-height: 20px;
-}
-
+  white-space: nowrap; }
 .ItemStats {
-  margin-top: 10px;
-}
+  margin-top: 10px; }
 
 /*
 */
@@ -98,8 +84,7 @@ body {
   background: center no-repeat;
   position: relative;
   height: 7.91075px;
-  margin: 1px 0px;
-}
+  margin: 1px 0px; }
 
 /*
 */
@@ -111,9 +96,8 @@ body {
 }
 
 .FlavourUnique {
-  color: #af6025;
-}
-
+  color: #af6025;}
+  
 .FlavourText {
   white-space: normal;
   font-style: italic;
@@ -184,18 +168,61 @@ body {
 }
 
 .Identified {
-  background-color: rgba(25, 26, 150, 0.25);
+    background-color: rgba(25, 26, 150, 0.25);
 }
 
 .Unidentified {
-  background-color: rgba(210, 0, 0, 0.18);
+    background-color: rgba(210, 0, 0, 0.18);
 }
 
-#stashTab1 {
-  display: block;
-  margin: auto;
+.tabControlls {
+  margin: 0;
+  padding: 0;
+  height: 26px;
+}
+
+#tabControlls div {
+  cursor: pointer;
+}
+
+.tab div {
+  height: 26px;
+  float: left;
+}
+
+.tab.inactive div {
+  background-position: 0px 0px !important;
+  transform: translateY(1px);
+}
+
+.tab div[data="C"] {
+  font-size: 16px;
+  line-height: 27px;
+}
+
+.tab div[data="L"], .tab div[data="R"] {
+  width: 19px;
+}
+
+#redL {
+  background: url("https://web.poecdn.com/gen/image/YTozOntpOjA7aToyNDtp/OjE7czozMjoiMDJhMTk3/N2QxZDAzNDQzNmU3NzM5/ZjgzZDEzYjIwN2YiO2k6/MjthOjI6e2k6MDtpOjI7/aToxO2E6Mzp7czoxOiJ0/IjtpOjE7czoxOiJuIjtz/OjA6IiI7czoxOiJjIjtp/Oi00MjU5ODQwO319fQ,,/98a058fc32/Stash_TabL.png") 0 -25px;
+}
+
+#redC {
+  background: url("https://web.poecdn.com/gen/image/YTozOntpOjA7aToyNDtp/OjE7czozMjoiMDJhMTk3/N2QxZDAzNDQzNmU3NzM5/ZjgzZDEzYjIwN2YiO2k6/MjthOjI6e2k6MDtpOjI7/aToxO2E6Mzp7czoxOiJ0/IjtpOjI7czoxOiJuIjtz/OjA6IiI7czoxOiJjIjtp/Oi00MjU5ODQwO319fQ,,/edc7e2c501/Stash_TabC.png") 0 -25px;
+}
+
+#redR {
+  background: url("https://web.poecdn.com/gen/image/YTozOntpOjA7aToyNDtp/OjE7czozMjoiMDJhMTk3/N2QxZDAzNDQzNmU3NzM5/ZjgzZDEzYjIwN2YiO2k6/MjthOjI6e2k6MDtpOjI7/aToxO2E6Mzp7czoxOiJ0/IjtpOjM7czoxOiJuIjtz/OjA6IiI7czoxOiJjIjtp/Oi00MjU5ODQwO319fQ,,/42ff0bf3e8/Stash_TabR.png") 0 -25px;
+}
+
+#stashTab {
+  top: 26px;
+  border: 3px solid rgb(191, 0, 0);
+  border-radius: 5px;
   background-image: url("https://web.poecdn.com/image/gen/inventory/StashPanelGrid.png?1522895930000");
   width: 569px;
   height: 569px;
   position: relative;
 }
+
